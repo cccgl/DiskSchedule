@@ -30,13 +30,13 @@
 本人实现内容：ostest.java  
 负责四个磁盘调度算法的代码实现  
 先来先服务FCFS（first come first service)
-https://github.com/cccgl/DiskSchedule/raw/master/img/fcfs.png  
+![image](https://github.com/cccgl/DiskSchedule/raw/master/img/fcfs.png)
 
 最短优先SSTF
-https://github.com/cccgl/DiskSchedule/raw/master/img/sstf.png  
+![image](https://github.com/cccgl/DiskSchedule/raw/master/img/sstf.png)  
 
 电梯算法SCAN
-https://github.com/cccgl/DiskSchedule/raw/master/img/scan.png  
+![image](https://github.com/cccgl/DiskSchedule/raw/master/img/scan.png)  
 
 单向电梯算法C-SCAN
-https://github.com/cccgl/DiskSchedule/raw/master/img/cscan.png  
+![image](https://github.com/cccgl/DiskSchedule/raw/master/img/cscan.png)  
