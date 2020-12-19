@@ -1,9 +1,8 @@
 # DiskSchedule
-# DiskSchedule
 本项目是操作系统课程设计实验课  
 题目如下：  
 基于磁头引臂调度算法的磁盘I/O访问的调度及其时间参数计算的模拟实现  
-功能要求  
+##功能要求  
 (1)设计调度算法选择（界面）算法包括：  
 先到先服务（FCFS）算法；  
 最短查找时间优先（SSTF）算法：  
@@ -27,16 +26,16 @@
 （3）除FCFS算法外，对其它调度算法，可参考如下数据结构  
            char track[200]={0,0，……，0}；    //track[i]=m，表示磁道i有m个I/O请求；  
 
-本人实现内容：ostest.java  
+##本人实现内容：ostest.java  
 负责四个磁盘调度算法的代码实现  
-先来先服务FCFS（first come first service)
+###先来先服务FCFS（first come first service)
 ![image](https://github.com/cccgl/DiskSchedule/raw/master/img/fcfs.png)
 
-最短优先SSTF
+###最短优先SSTF
 ![image](https://github.com/cccgl/DiskSchedule/raw/master/img/sstf.png)  
 
-电梯算法SCAN
+###电梯算法SCAN
 ![image](https://github.com/cccgl/DiskSchedule/raw/master/img/scan.png)  
 
-单向电梯算法C-SCAN
+###单向电梯算法C-SCAN
 ![image](https://github.com/cccgl/DiskSchedule/raw/master/img/cscan.png)  
