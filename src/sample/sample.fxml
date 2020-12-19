@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootLayout" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="73.0" layoutY="64.0" text="跨越1个磁道所用时间" />
+      <TextField fx:id="inserttime1" layoutX="196.0" layoutY="60.0" prefHeight="23.0" prefWidth="55.0" promptText="(ms)" />
+      <Label layoutX="73.0" layoutY="91.0" text="磁盘转速" />
+      <TextField fx:id="insertspeed" layoutX="196.0" layoutY="87.0" prefHeight="23.0" prefWidth="55.0" promptText="(r/min)" />
+      <Label layoutX="73.0" layoutY="118.0" text="每磁道扇区(块)数" />
+      <TextField fx:id="insertsector" layoutX="196.0" layoutY="114.0" prefHeight="23.0" prefWidth="55.0" />
+      <Label layoutX="269.0" layoutY="64.0" text="启动时间" />
+      <Label layoutX="269.0" layoutY="118.0" text="每扇区(块)字节数" />
+      <TextField fx:id="inserttime2" layoutX="368.0" layoutY="60.0" prefHeight="23.0" prefWidth="55.0" promptText="(ms)" />
+      <TextField fx:id="insertbyte" layoutX="368.0" layoutY="114.0" prefHeight="23.0" prefWidth="55.0" />
+      <Button fx:id="buttonreset" layoutX="435.0" layoutY="61.0" mnemonicParsing="false" onAction="#insertreset" prefHeight="76.0" prefWidth="64.0" text="重设" />
+      <Label layoutX="73.0" layoutY="145.0" text="每个盘面的磁道数（由外向内）固定为：0,1,2，……，198,199" />
+      <Label layoutX="73.0" layoutY="172.0" text="当前磁头所在磁道" />
+      <Label layoutX="269.0" layoutY="172.0" text="磁头移动方向" />
+      <TextField fx:id="inserttrack" editable="false" layoutX="196.0" layoutY="168.0" prefHeight="23.0" prefWidth="55.0" />
+      <TextField fx:id="insertdirection" editable="false" layoutX="368.0" layoutY="168.0" prefHeight="23.0" prefWidth="55.0" />
+      <Button fx:id="buttonrandom" layoutX="435.0" layoutY="168.0" mnemonicParsing="false" onAction="#insertrandom" text="随机生成" />
+      <Button fx:id="FCFSbutton" layoutX="73.0" layoutY="233.0" mnemonicParsing="false" onAction="#FCFSsubmit" prefHeight="45.0" prefWidth="179.0" text="先到先服务(FCFS)" />
+      <Button fx:id="SSTFbutton" layoutX="316.0" layoutY="233.0" mnemonicParsing="false" onAction="#SSTFsubmit" prefHeight="45.0" prefWidth="179.0" text="最短查找时间优先(SSTF)算法" />
+      <Button fx:id="SCANbutton" layoutX="73.0" layoutY="305.0" mnemonicParsing="false" onAction="#SCANsubmit" prefHeight="45.0" prefWidth="179.0" text="扫描算法(SCAN)" />
+      <Button fx:id="LOOKbutton" layoutX="316.0" layoutY="305.0" mnemonicParsing="false" onAction="#LOOKsubmit" prefHeight="45.0" prefWidth="179.0" text="电梯算法(LOOK)" />
+   </children>
+</AnchorPane>
